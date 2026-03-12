@@ -7,11 +7,8 @@ import {PackedUserOperation} from "lib/account-abstraction/contracts/interfaces/
 /// @title MinimalAccount
 /// @notice A minimal account contract that can receive and send Ether.
 contract MinimalAccount is IAccount {
-
-
-    function validateUserOp(
-        PackedUserOperation calldata userOp,
-        bytes32 userOpHash,
-        uint256 missingAccountFunds
-    ) external returns (uint256 validationData){}
+    function validateUserOp(PackedUserOperation calldata userOp, bytes32 userOpHash, uint256 missingAccountFunds)
+        external
+        returns (uint256 validationData)
+    {}
 }
